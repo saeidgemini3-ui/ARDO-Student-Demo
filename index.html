@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#273443">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>Student Lesson — lesson.blink</title>
+<style>body{font-family:sans-serif;max-width:48rem;margin:3rem auto;padding:1rem;line-height:1.8}a{display:inline-block;padding:.8rem 1rem;border:1px solid currentColor;border-radius:.6rem}</style>
+</head>
+<body>
+<h1>Student Lesson — lesson.blink</h1>
+<p>نسخه 1.1.0</p>
+<a href="./lesson.blink--phase.preview.html">ورود به درس</a>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js", {scope:"./"}));
+}
+</script>
+</body>
+</html>

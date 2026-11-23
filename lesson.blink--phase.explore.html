@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f3a">
+  <title>روشن و خاموش کردن LED با Arduino • آردو</title>
+  <link rel="stylesheet" href="assets/foundation.css?v=component-terminal-inspector-v1">
+  <script src="assets/copy-code.js" defer></script><script src="assets/circuit-interaction.js?v=component-terminal-inspector-v1" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">رفتن به محتوای اصلی</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="آردو، صفحهٔ اصلی"><span class="brand-mark" aria-hidden="true">A</span><span>آردو<small>آزمایشگاه یادگیری Arduino</small></span></a>
+  <nav aria-label="ناوبری اصلی"><a href="index.html">ورود نمونه</a>
+  <a href="index.html">یادگیری</a>
+  
+  
+  </nav>
+</header>
+<div class="fixture-notice">دموی محلی با محتوای نمونه • بدون دادهٔ واقعی هنرجو</div>
+<main id="main" tabindex="-1">
+<header class="lesson-head">
+  <div class="breadcrumbs"><span>آغاز آردوینو</span><span aria-hidden="true">/</span><span>نور و فرمان</span></div>
+  <div class="lesson-heading"><div><p class="eyebrow">مرحلهٔ 2 از 6</p><h1>روشن و خاموش کردن LED با Arduino</h1><p class="lead">یک مدار واقعی می‌سازیم و به Arduino یاد می‌دهیم LED را هر یک ثانیه روشن و خاموش کند.</p></div>
+  <dl class="lesson-meta"><div><dt>سطح</dt><dd>مقدماتی</dd></div><div><dt>زمان</dt><dd>حدود ۳۰ دقیقه</dd></div></dl></div>
+  <label class="sr-only" for="lesson-progress">پیشرفت مرحله‌های درس</label><progress id="lesson-progress" value="2" max="6">2 از 6</progress>
+</header>
+<nav class="phases" aria-label="مرحله‌های درس">
+<a href="lesson.blink--phase.preview.html" class="state-complete"><span class="phase-number">✓</span><span><small>تمام شد</small>مأموریت</span></a><a href="lesson.blink--phase.explore.html" class="state-current" aria-current="step"><span class="phase-number">2</span><span><small>اینجا هستی</small>شناخت قطعات</span></a><a href="lesson.blink--phase.build--step-1.html" class="state-future"><span class="phase-number">3</span><span><small>پیش رو</small>ساخت مدار</span></a><a href="lesson.blink--phase.run.html" class="state-future"><span class="phase-number">4</span><span><small>پیش رو</small>اجرا و بررسی</span></a><a href="lesson.blink--phase.learn-to-code.html" class="state-future"><span class="phase-number">5</span><span><small>پیش رو</small>کد را بفهم</span></a><a href="lesson.blink--phase.mastery.html" class="state-future"><span class="phase-number">6</span><span><small>پیش رو</small>چالش پایانی</span></a>
+</nav>
+<section class="phase-shell" aria-labelledby="phase-title"><div class="phase-title"><p class="eyebrow">مرحلهٔ 2</p><h2 id="phase-title">شناخت قطعات</h2></div>
+<article class="lesson-block block-parts" data-block-id="block.explore" data-block-kind="parts">
+  <header class="block-head"><h3>قبل از شروع، قطعه‌ها را بشناس</h3><p>شکل هر قطعه و نشانه‌ای که باید روی آن پیدا کنی اینجاست. قطعه‌ها را با تصویر مقایسه کن.</p></header>
+  
+    <div class="parts-grid"><article class="part-card" data-component="arduino.uno">
+      <div class="part-visual"><img src="assets/parts/uno.svg" alt="Arduino Uno — ردیف پین‌های دیجیتال و نوشتهٔ D13 را پیدا کن." width="380" height="300"></div>
+      <div><p class="part-id"><bdi dir="ltr">Arduino Uno</bdi></p><h4>برد اصلی که کد را اجرا می‌کند.</h4><p>ردیف پین‌های دیجیتال و نوشتهٔ D13 را پیدا کن.</p><small>قطعهٔ اصلی همین مدار</small></div>
+    </article><article class="part-card" data-component="breadboard.fixture">
+      <div class="part-visual"><img src="assets/parts/breadboard.svg" alt="بردبرد — حروف A تا E و شمارهٔ ردیف‌ها را کنار سوراخ‌ها ببین." width="300" height="430"></div>
+      <div><p class="part-id"><bdi dir="ltr">بردبرد</bdi></p><h4>مدار را بدون لحیم‌کاری روی آن می‌سازیم.</h4><p>حروف A تا E و شمارهٔ ردیف‌ها را کنار سوراخ‌ها ببین.</p><small>قطعهٔ اصلی همین مدار</small></div>
+    </article><article class="part-card" data-component="led.red">
+      <div class="part-visual"><img src="assets/parts/led.svg" alt="LED قرمز — پایهٔ بلندتر آند (+) و پایهٔ کوتاه‌تر کاتد (−) است." width="60" height="80"></div>
+      <div><p class="part-id"><bdi dir="ltr">LED قرمز</bdi></p><h4>چراغ قرمز مدار؛ جهت پایه‌هایش مهم است.</h4><p>پایهٔ بلندتر آند (+) و پایهٔ کوتاه‌تر کاتد (−) است.</p><small>قطعهٔ اصلی همین مدار</small></div>
+    </article><article class="part-card" data-component="resistor.330">
+      <div class="part-visual"><img src="assets/parts/resistor.svg" alt="مقاومت 330 اهم — نوارهای نارنجی، نارنجی، قهوه‌ای و طلایی را پیدا کن." width="40" height="30"></div>
+      <div><p class="part-id"><bdi dir="ltr">مقاومت 330 اهم</bdi></p><h4>مقاومت ۳۳۰ اهم جریان LED را محدود می‌کند.</h4><p>نوارهای نارنجی، نارنجی، قهوه‌ای و طلایی را پیدا کن.</p><small>قطعهٔ اصلی همین مدار</small></div>
+    </article><article class="part-card" data-component="jumper.wires">
+      <div class="part-visual"><img src="assets/parts/jumper-wires.svg" alt="سیم‌های جامپر — هر دو سر سیم باید پین نری سالم و صاف داشته باشد." width="160" height="90"></div>
+      <div><p class="part-id"><bdi dir="ltr">سیم‌های جامپر</bdi></p><h4>دو سیم جامپر مسیر فرمان و زمین را می‌سازند.</h4><p>هر دو سر سیم باید پین نری سالم و صاف داشته باشد.</p><small>2 سیم موردنیاز برای ساخت مدار</small></div>
+    </article></div>
+  
+</article>
+</section>
+<nav class="lesson-footer-nav" aria-label="حرکت بین مرحله‌ها"><span>مرحلهٔ فعلی: شناخت قطعات</span><a href="index.html">بازگشت به صفحهٔ درس‌ها</a></nav>
+</main>
+<footer><span>نسخهٔ نمایشی آردو</span><span>آمادهٔ استفادهٔ تولیدی نیست.</span><span>هویت نمونه: نسخهٔ قابل‌حمل</span></footer>
+</body></html>

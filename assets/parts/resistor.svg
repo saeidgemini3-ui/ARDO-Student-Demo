@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30">
+  <title>مقاومت ۳۳۰ اهم با نوارهای نارنجی، نارنجی، قهوه‌ای و طلایی</title>
+  <defs><linearGradient id="ceramic" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4e5c4"/><stop offset=".5" stop-color="#d7bd8e"/><stop offset="1" stop-color="#aa8d62"/></linearGradient><linearGradient id="wire" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eef2f1"/><stop offset=".5" stop-color="#697579"/><stop offset="1" stop-color="#d9dfde"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-opacity=".28"/></filter></defs>
+  <path d="M0 15h40" stroke="url(#wire)" stroke-width="2.2"/><rect x="6.5" y="8.5" width="27" height="13" rx="5.5" fill="url(#ceramic)" stroke="#756447" filter="url(#shadow)"/><path d="M12 9.5v11m5-11v11" stroke="#d45a08" stroke-width="3"/><path d="M23 9.5v11" stroke="#6a3721" stroke-width="3"/><path d="M29 10v10" stroke="#b69a34" stroke-width="2.2"/><path d="M9 11h22" stroke="#fff" stroke-opacity=".38"/>
+</svg>
